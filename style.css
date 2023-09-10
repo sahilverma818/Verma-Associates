@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.landing {
+    background-color: antiquewhite;
+    display: flex;
+    width: 100%;
+    line-height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    background-color: none;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+
+.left h1 {
+    text-align: center;
+    margin: 0 10px 0 10px;
+    color: rgb(172, 0, 0);
+}
+
+.left h1:hover {
+    color: red;
+}
+
+.left p {
+    text-align: center;
+    color: rgb(123, 0, 0);
+}
+
+.more {
+    font-family: monospace;
+    background-color: transparent;
+    height: 4rem;
+    display: flex;
+    width: 20rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+}
+
+.more:hover {
+    background-color: transparent;
+    border: 1px solid brown;
+    color: red;
+
+}
+
+.right {
+    background-color: none;
+    height: 100vh;
+    line-height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    height: 50vh;
+    display: flex;
+}
+
+@media(max-width:1000px){
+    .landing{
+        display: block;
+        /* height: 77.5vh; */
+    }
+
+    .left,.right{
+        height: 77.5vh;
+    }
+}
+
+/* Services Section */
+
+.services{
+    background-color: whitesmoke;
+    padding: 2vh 8vw 2vh 8vw;
+}
+
+.serviceIntro h1{
+    font-family: 'Merriweather', serif;
+    font-size: 50px;    
+}
+
+.serviceIntro h3{
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+}
+
+.serviceItems{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.serviceContent{
+    padding: 30px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+
+.serviceContent h2{
+    padding-bottom: 2px;
+}
+
+.serviceContent img{
+    width: 9%;
+}
